@@ -4,6 +4,8 @@ import com.beust.jcommander.Parameter;
 
 public class CommandLineArgs {
 
+    jcommander.setCaseSensitiveOptions(false);
+
     @Parameter(names = {"--apiKey"}, required = true, description = "OpsGenie Integration API Key")
     private String apiKey;
 
